@@ -31,3 +31,10 @@ To see a different namespace use the “-n” argument: `kubectl get all -n <nam
 
 ### Pods
 `kubectl get pods` gets all the pods of your project namespace.
+`kubectl logs <pod name>` look at the logs
+`kubectl logs <pod name> -f` follow the logs (a.k.a. tail) by using the -f parameter.
+`kubectl describe pod <pod name>` see relevant information about the pod.
+If your pod didn’t start and you don’t have any logging then this is the place to look.
+`kubectl exec -it {pod name} /bin/bash` open a SSH connection to your container. 
+Note: The command will be executes on the first container of your pod; if you have multiple containers within one pod you need to specific the `-c <container name>` parameter.
+`kubectl port-forward <pod name> 8888:8080` create port-forwards to your container (which is practical if you want to connect to a debug port, for instance).
