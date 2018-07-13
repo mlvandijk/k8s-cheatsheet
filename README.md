@@ -20,7 +20,11 @@ This gives you the `kctx` and `kns` commands.
 ### Creating aliases for your contexts
 `kctx <alias>=<NAME>` sets an alias for your context
 `kctx <alias>` - Switch to context (using alias, if you've set up an alias).
+
+### Name spaces
 `kubectl get namespaces` shows the current namespace within the active cluster.
 `kns` also shows the namespaces (active namespace for the kubectl context is marked yellow).
-
-
+`kubectl get all`only shows the resources of the active namespace.
+To see a different namespace use the “-n” argument: `kubectl get all -n <namespace>`
+`kns <>namespace>` to switch to that namespace.
+`kubectl get all` to see all resources for that namespace.
