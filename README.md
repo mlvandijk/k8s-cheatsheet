@@ -28,3 +28,6 @@ This gives you the `kctx` and `kns` commands.
 To see a different namespace use the “-n” argument: `kubectl get all -n <namespace>`
 `kns <>namespace>` to switch to that namespace.
 `kubectl get all` to see all resources for that namespace.
+
+### Pods
+`kubectl get pods` gets all the pods of your project namespace.
