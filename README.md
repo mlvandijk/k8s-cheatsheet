@@ -14,6 +14,7 @@ gcloud components install kubectl
 This gives you the `kctx` and `kns` commands.
 
 ## Kubeclt
+`kubectl version` check the version.
 `kubectl config get-contexts` shows the current kubectl contexts.
 `kctx`shows the current kubectl contexts (active context is marked yellow).
 
@@ -38,3 +39,8 @@ If your pod didn’t start and you don’t have any logging then this is the pla
 `kubectl exec -it {pod name} /bin/bash` open a SSH connection to your container. 
 Note: The command will be executes on the first container of your pod; if you have multiple containers within one pod you need to specific the `-c <container name>` parameter.
 `kubectl port-forward <pod name> 8888:8080` create port-forwards to your container (which is practical if you want to connect to a debug port, for instance).
+
+
+# Links:
+
+- https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/
