@@ -11,35 +11,48 @@ gcloud components install kubectl
 ```
 ## CLI tools
 `brew install kubectx --without-kubernetes-cli --with-short-names`
+
 This gives you the `kctx` and `kns` commands.
 
 ## Kubeclt
 `kubectl version` check the version.
+
 `kubectl config get-contexts` shows the current kubectl contexts.
+
 `kctx`shows the current kubectl contexts (active context is marked yellow).
 
 ### Creating aliases for your contexts
 `kctx <alias>=<NAME>` sets an alias for your context
+
 `kctx <alias>` - Switch to context (using alias, if you've set up an alias).
 
 ### Name spaces
 `kubectl get namespaces` shows the current namespace within the active cluster.
+
 `kns` also shows the namespaces (active namespace for the kubectl context is marked yellow).
+
 `kubectl get all`only shows the resources of the active namespace.
+
 To see a different namespace use the “-n” argument: `kubectl get all -n <namespace>`
+
 `kns <>namespace>` to switch to that namespace.
+
 `kubectl get all` to see all resources for that namespace.
 
 ### Pods
 `kubectl get pods` gets all the pods of your project namespace.
+
 `kubectl logs <pod name>` look at the logs
+
 `kubectl logs <pod name> -f` follow the logs (a.k.a. tail) by using the -f parameter.
+
 `kubectl describe pod <pod name>` see relevant information about the pod.
 If your pod didn’t start and you don’t have any logging then this is the place to look.
+
 `kubectl exec -it {pod name} /bin/bash` open a SSH connection to your container. 
 Note: The command will be executes on the first container of your pod; if you have multiple containers within one pod you need to specific the `-c <container name>` parameter.
-`kubectl port-forward <pod name> 8888:8080` create port-forwards to your container (which is practical if you want to connect to a debug port, for instance).
 
+`kubectl port-forward <pod name> 8888:8080` create port-forwards to your container (which is practical if you want to connect to a debug port, for instance).
 
 # Links:
 
