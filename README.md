@@ -57,6 +57,18 @@ Note: The command will be executes on the first container of your pod; if you ha
 
 `kubectl port-forward <pod name> 8888:8080` create port-forwards to your container (which is practical if you want to connect to a debug port, for instance).
 
+### Kill it
+
+`kubectl delete replicaset` delete replicaset.
+
+`kubectl delete pod <podname>` to delete that pod.
+
+`kubectl get pods <podname> -o yaml`
+
+### Monitor
+
+`kubectl get events` to monitor namespace 
+
 # Links:
 
 - https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/
