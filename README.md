@@ -56,6 +56,7 @@ If your pod didn’t start and you don’t have any logging then this is the pla
 Note: The command will be executes on the first container of your pod; if you have multiple containers within one pod you need to specific the `-c <container name>` parameter.
 
 `kubectl port-forward <pod name> 8888:8080` create port-forwards to your container (which is practical if you want to connect to a debug port, for instance).
+In your browser you can now visit: [http://localhost:8888](http://localhost:8888).
 
 ### Kill it
 
