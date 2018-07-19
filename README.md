@@ -72,6 +72,10 @@ In your browser you can now visit: [http://localhost:8888](http://localhost:8888
 
 # Links:
 
+- https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/111629/1090354/cSa8xm0topnMweS/6738223-dzone-refcardz-kubernetes-rc233.pdf
+
 - https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-probes/
 
-- https://s3-eu-west-1.amazonaws.com/uploads-eu.hipchat.com/111629/1090354/cSa8xm0topnMweS/6738223-dzone-refcardz-kubernetes-rc233.pdf
+- https://kubernetes.io/docs/tasks/debug-application-cluster/get-shell-running-container/
+
+- https://kubernetes.io/docs/concepts/configuration/secret/
