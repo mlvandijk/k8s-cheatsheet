@@ -60,11 +60,12 @@ In your browser you can now visit: [http://localhost:8888](http://localhost:8888
 
 ### Kill it
 
-`kubectl delete replicaset` delete replicaset.
+`kubectl delete <replicaset>` delete replicaset.
 
 `kubectl delete pod <podname>` to delete that pod.
 
 `kubectl get pods <podname> -o yaml`
+
 
 ### Monitor
 
