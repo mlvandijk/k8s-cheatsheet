@@ -38,7 +38,7 @@ Kubeclt (KUBErnetes ConTrL) - command line interface for Kubernetes
 
 To see a different namespace use the “-n” argument: `kubectl get all -n <namespace>`
 
-`kns <>namespace>` to switch to that namespace.
+`kns <namespace>` to switch to that namespace.
 
 `kubectl get all` to see all resources for that namespace.
 
