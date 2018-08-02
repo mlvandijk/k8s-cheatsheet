@@ -12,6 +12,7 @@ gcloud components install kubectl
 
 ## Update gcloud
 `gcloud components update`
+Install a particular version: `gcloud components update --version <version>`
 
 ## CLI tools
 `brew install kubectx --without-kubernetes-cli --with-short-names`
