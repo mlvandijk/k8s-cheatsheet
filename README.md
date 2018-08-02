@@ -9,6 +9,10 @@ gcloud auth login
 gcloud init
 gcloud components install kubectl
 ```
+
+## Update gcloud
+`gcloud components update`
+
 ## CLI tools
 `brew install kubectx --without-kubernetes-cli --with-short-names`
 
