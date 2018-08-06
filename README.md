@@ -88,3 +88,8 @@ In your browser you can now visit: [http://localhost:8888](http://localhost:8888
 - https://kubernetes.io/docs/tasks/debug-application-cluster/get-shell-running-container/
 
 - https://kubernetes.io/docs/concepts/configuration/secret/
+
+- https://kubernetes.io/docs/reference/glossary/?fundamental=true
+
+- https://blog.spinnaker.io/lifting-the-sail-how-spinnaker-maps-resources-to-kubernetes-57da9c1657ba
+
